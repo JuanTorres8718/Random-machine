@@ -1,0 +1,20 @@
+#quote-box{
+    width: 40%;
+}
+
+#text{
+    font-size: 2rem;
+}
+
+.fa-twitter-square{
+    transform: scale(2.5);
+}
+
+.fa-tumblr-square{
+    transform: scale(2.5);
+    margin-left: 27px;
+}
+
+#new-quote{
+    border:0;
+}
