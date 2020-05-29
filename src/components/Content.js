@@ -5,24 +5,25 @@ import '../styles/StyleContent.css';
 
 
 
-const Content = ({data, onClick}) =>{
+const Content = ({data, onClick, color}) =>{
 
     return(
         <div className="content vh-100 d-flex flex-column justify-content-center align-items-center"
-            style={{backgroundColor: data.color}}>
+            style={{backgroundColor: color}}>
             <div className="card p-4" id="quote-box">
                 <div className="card-body">
                      <Text 
                         textAndColor = {data}
+                        color = {color}
                      />   
                     <div className="d-flex justify-content-between align-items-center">
                         <div>
                             <Icons 
-                                color = {data.color}
+                                color = {color}
                             />
                         </div>
                         <div>
-                        <button type="button" className="btn btn-dark" id="new-quote" onClick={onClick} style={{backgroundColor: data.color}}>New quote</button>
+                        <button type="button" className="btn btn-dark" id="new-quote" onClick={onClick} style={{backgroundColor: color}}>New quote</button>
                         </div>
                     </div>
                 </div>
